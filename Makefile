@@ -6,7 +6,7 @@ endif
 
 CC=$(CROSS_COMPILE)gcc
 CC+=-x c -pipe
-CFLAGS+=-std=c17 -Wall -Wextra -O2 -ggdb -feliminate-unused-debug-types -fdebug-prefix-map='$(dir $(PWD))='
+CFLAGS+=-std=c17 -Wall -Wextra -O2 -ggdb -feliminate-unused-debug-types -ffile-prefix-map='$(dir $(PWD))='
 LDFLAGS+=-ldl
 
 BINS:=aa aa-c17
